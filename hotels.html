@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Гостиницы Седоны</title>
+</head>
+<body>
+
+	<Header class="main-header">
+
+    	<nav class="main-navigation">
+			
+			<a href="index.html" class="logo">
+				<img src="http://placehold.it/137x137" alt="Логотип туристического города 'Седона' ">
+			</a>
+
+    		<ul class="site-navigation">
+    			<li><a href="info.html">Информация</a></li>
+    			<li><a href="gallery.html">Фото и видео</a></li>
+    			<li><a href="map.html">Карта штата</a></li>
+    			<li><a href="hotels.html">Гостиницы</a></li>
+    		</ul>
+    	</nav>
+
+    </Header>
+		<main class="container">
+		    <section class="filters">
+		    	<h2 class="visually-hidden">Фильтры для сортировки гостиниц</h2>
+
+				<form action="http://echo.htmlacademy.ru" method="get" class="filter">
+				
+				<fieldset>
+					<legend>Инфраструктура</legend>
+						<ul>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="pool">
+									<span>Бассейн</span>
+								</label>
+							</li>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="park-place">
+									<span>Парковка</span>
+								</label>
+							</li>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="wi-fi">
+									<span>Wi-fi</span>
+								</label>
+							</li>
+						</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Тип жилья:</legend>
+						<ul>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="hotels">
+									<span>Гостиница</span>
+								</label>
+							</li>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="motels">
+									<span>Мотель</span>
+								</label>
+							</li>
+							<li class="filter-option">
+								<label>
+									<input type="checkbox" class="visually-hidden-input filter-input-checkbox" name="apartments">
+									<span>Апартаменты</span>
+								</label>
+							</li>
+						</ul>
+				</fieldset>
+
+				<fieldset> <!-- Пока не до конца понимаю, как можно реализовать форму -->
+					<legend>Стоимость в сутки(р):</legend>
+						<input type="range" min="0" max="30000">
+
+					<button type="button" class="btn">Показать</button>
+				</fieldset>		
+
+				</form>
+
+		    </section>
+
+			<section class="sorting">
+				<!-- Не понимаю, как нужно верстать данный отдел. Подскажи в каком направление двигаться) -->
+			</section>
+
+		</main>
+
+    <footer class="main-footer">
+		
+		<div class="hashtag">
+			<p>#visitsedona</p>
+		</div>
+
+		<div class="footer-social">
+        	<ul>
+          		<li><a class="social-button" href="#">Вконтакте</a></li>
+          		<li><a class="social-button" href="#">Фейсбук</a></li>
+         	 	<li><a class="social-button" href="#">Инстаграм</a></li>
+        	</ul>
+        </div>
+
+        <div class="copyright">
+        	<p>website by<a href="https://htmlacademy.ru"><img src="http://placehold.it/115x40" alt="Сделано в Питере с любовью!"></a></p>
+        </div>
+
+	</footer>
+
+
+	
+</body>
+</html>
