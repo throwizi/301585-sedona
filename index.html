@@ -20,20 +20,20 @@
   	  <li><a href="hotels.html">Гостиницы</a></li>
 	</ul>
   </nav>
-<img src="img/content/Welcome.png" width="458" height="352" alt="Добро пожаловать в безумно красивый туристический город 'Седона' ">
+<img   src="img/content/Welcome.png" class="welcome-img" width="458" height="352" alt="Добро пожаловать в безумно красивый туристический город 'Седона' ">
 </header>
 <main class="container">
  <section class="reasons">
    <h1 class="title">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
-   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+   <p class="footnote">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
    <section class="banner">
 	<div class="banner-signature">
 	  <h3 class="title">Настоящий городок</h3>
 	  <span>&#8212; №1 &#8212;</span>
-	  <p>Седона - это не аттракцион для туристов, там течёт своя жизнь </p>
+	  <p>Седона - это не аттракцион для туристов, <br> там течёт своя жизнь </p>
 	</div>
 	<div class="banner-img">
-	  <img src="img/content/feature-1.jpg" width="800" height="256" alt="Настоящий городок 'Cедона' ">
+	  <img src="img/content/feature-1.jpg" width="800" height="255" alt="Настоящий городок 'Cедона' ">
 	</div>
    </section>
    <section class="features">
@@ -54,7 +54,7 @@
    </section>
    <section class="banner">
 	<div class="banner-img">
-	  <img src="img/content/feature-2.jpg" width="800" height="256" alt="Мост дьявола">
+	  <img src="img/content/feature-2.jpg" width="800" height="255" alt="Мост дьявола">
 	</div>
 	<div class="banner-signature">
 	  <h3 class="title">Там есть мост дьявола</h3>
@@ -63,7 +63,7 @@
 	</div>
    </section>
    <section class="reason">
-	<ul class="reason-list">
+	<ul class="reasons-list">
 	 <li class="reason-item">
 	  <h3 class="title">Небольшая площадь</h3>
 	  <span>&#8212; №3 &#8212;</span>
@@ -92,24 +92,20 @@
 	<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 	<form class="reservation-form" action="https://echo.htmlacademy.ru" method="post">
 	<p>
-	 <label>Дата заезда:
-	   <input class="сalendar-icon" type="date" name="in">
-	 </label>
+	   <label for ="in">Дата заезда: </label>
+	   <input class="сalendar-icon" type="date" id="in" name="in">
 	</p>
 	<p>
-	 <label>Дата выезда:
-	  <input class="сalendar-icon" type="date" name="out">
-	 </label>
+	  <label for="out">Дата выезда:</label>
+	  <input class="сalendar-icon" type="date" name="out" id="out">
 	</p>
 	<p> 
-	 <label>Дети:
-	  <input type="text" name="children">
-	 </label>	
+	 <label for="children">Дети:
+	  <input type="text" name="children" id="children">	
 	</p>
 	<p>
-	 <label>Взрослые:
-	  <input type="text" name="children">
-	 </label>	
+	 <label for="adults">Взрослые:</label>
+	  <input type="text" name="adults" id="adults">	
 	</p>
 	<button class="btn search" type="submit">Найти</button>
 	</form>
@@ -123,17 +119,17 @@
 </main>
 <footer class="main-footer">
 
-<div class="hashtag">
+<div class="footer-item hashtag">
   <p>#visitsedona</p>
 </div>
-<div class="footer-social">
+<div class="footer-item footer-social">
 	<ul>
 	  <li><a class="social-button vk" href="#">Вконтакте</a></li>
 	  <li><a class="social-button fb" href="#">Фейсбук</a></li>
 	  <li><a class="social-button in" href="#">Инстаграм</a></li>
 	</ul>
 </div>
-<div class="copyright">
+<div class="footer-item copyright">
 	<p>website by<a href="https://htmlacademy.ru"><img src="img/content/html-logo.png" width="115" height="40" title="Сделано в Питере с любовью!"></a></p>
 </div>
 </footer>
