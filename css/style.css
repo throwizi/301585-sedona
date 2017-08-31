@@ -191,19 +191,27 @@ a{
 	outline: 3px solid #00FFFF;
 }
 
-.features-list{
+.features-list,.reasons-list{
+
+	/*Временно для сетки*/
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+
+	padding: 0;
 	list-style: none;
 }
 
 .feature-item{
 
 	/*Временно для сетки*/
-	display: inline-block;
-	width: 29rem;
-	padding-top: 11rem;
-	margin-right: 6rem;
 
-	vertical-align: top;
+	width: 33%;
+	padding-top: 11rem;
 
 	outline: 3px solid red;
 }
@@ -230,18 +238,13 @@ a{
 
 	outline: 3px solid #00FF00;
 }
-
 .reasons-list{
-	list-style: none;
-
+	padding-top: 3rem;
 }
 
 .reason-item{
 	/*Временно для сетки*/
-	display: inline-block;
-	width: 26.5rem;
-	margin-right: 6rem;
-
+	width: 33%;
 	outline: 3px solid yellow;
 }
 
