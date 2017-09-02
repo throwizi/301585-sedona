@@ -5,7 +5,6 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-
 	font-family: "PTSans", "Arial", sans-serif;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -352,9 +351,14 @@ label[for="adults"]{
 	background-color: #f2f2f2;
 }
 
-/*input[id="in"], input[id="out"]{
-	background: #f2f2f2 url(../img/icons/calendar.svg) no-repeat 310px 50%;
-}*/
+.appointment-item input:hover{
+	background-color: #ebebeb;
+}
+
+.appointment-item input:focus{
+	background-color: #fff;
+}
+
 
 .calendar {
     position: absolute;
