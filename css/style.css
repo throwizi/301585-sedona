@@ -319,6 +319,7 @@ input[type="radio"].visually-hidden {
 }
 
 p.appointment-item{
+	position: relative;
 	margin: 0;
 	margin-bottom: 30px;
 }
@@ -351,8 +352,28 @@ label[for="adults"]{
 	background-color: #f2f2f2;
 }
 
-input[id="in"], input[id="out"]{
+/*input[id="in"], input[id="out"]{
 	background: #f2f2f2 url(../img/icons/calendar.svg) no-repeat 310px 50%;
+}*/
+
+.calendar {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    fill: #cacaca;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar:hover,  .calendar:focus {
+    fill: #000000;
+    outline: none;
+}
+
+.calendar:active{
+	fill: #81b3d2;
+	outline: none
 }
 
 .appointment-item:nth-child(3),.appointment-item:nth-child(4){
