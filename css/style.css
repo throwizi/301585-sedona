@@ -136,8 +136,8 @@ input[type="radio"].visually-hidden {
     bottom: 0;
     left: 0;
     display: block;
-    width: 1200px;
-    height: 57px;
+    width: 120rem;
+    height: 5.7rem;
     background: url(../img/backgrounds/index-mask.png) bottom left no-repeat;
 }
 
@@ -182,25 +182,24 @@ input[type="radio"].visually-hidden {
 
 .banner-signature{
 	flex-grow:1;
-	flex-basis: 40rem;
 	
 	padding: 4.85rem 0;
 
 
 	color: #fff;
 	line-height: 2.1rem;
-	background-color: #81b3d2;*/
+	background-color: #81b3d2;
+
+	vertical-align: top;
 }
 
-
-.banner-img{
-	height: 25.6rem;
-}
 
 .banner-img img{
-	flex-basis: 40rem;
 	flex-grow: 2;
+	height: 100%;
 	margin: 0;
+
+	vertical-align: top;
 }
 
 .features{
@@ -214,13 +213,18 @@ input[type="radio"].visually-hidden {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 
 	padding: 0;
 	list-style: none;
 }
 	
 .feature-item{
-	width: 33%;
+	flex-grow: 1;
 	padding-top: 11rem;
 }
 
@@ -238,9 +242,6 @@ input[type="radio"].visually-hidden {
 
 
 .reason{
-	min-width: 120rem;
-	padding-bottom: 6rem;
-
 	background-color: #eeeeee;
 }
 
@@ -252,14 +253,21 @@ input[type="radio"].visually-hidden {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 3rem;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	flex-basis: 40rem;
 
 	padding: 0;
 	list-style: none;
 }
 
 .reason-item{
-	width: 33%;
+	flex-grow:1;
+	padding-bottom: 5rem;
+	align-self: space-around;
 }
 
 .reason-item p {
@@ -271,8 +279,7 @@ input[type="radio"].visually-hidden {
 .search-form{
 	position: relative;
 
-	min-height: 21rem;
-	padding-top: 5rem;
+	padding-top: 1.9rem;
 
 	text-align: center;
 }
@@ -291,7 +298,7 @@ input[type="radio"].visually-hidden {
 
 .btn-open{
 	border: none;
-	padding: 3rem 12.6rem;
+	padding: 3rem 12.168rem;
 
 	font-size: 2.1rem;
 	line-height: 2.6rem;
@@ -312,6 +319,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal{
+	position: absolute;
+	left:50%;
+	transform:translateX(-50%);
+
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -319,17 +330,14 @@ input[type="radio"].visually-hidden {
 	display: flex;
 
 	width: 57rem;
-
-	/*padding: 5.5rem;*/
-	/*-webkit-flex-direction: column;
-	-moz-flex-direction: column;
-	-ms-flex-direction: column;
-	-o-flex-direction: column;
-	flex-direction: column;*/
+	padding-bottom: 8rem;
 
 	text-align: center;
+	
+	background-color: #fff;
+	box-shadow: 5px 5px 5px 0px rgba(225, 224, 222, 0.3);
 
-	outline: 3px solid green;
+	z-index: 1;
 }
 
 .form-wrapper{
@@ -344,9 +352,18 @@ input[type="radio"].visually-hidden {
 	-o-flex-direction: column;
 	flex-direction: column;
 
+	max-width: 57rem;
 	margin: 0 auto;
 
-	outline: 3px solid yellow;
+}
+
+.reservation-form label{
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.appointment-item{
+	position: relative;
 }
 
 .appointment-item label{
@@ -359,69 +376,6 @@ input[type="radio"].visually-hidden {
 	padding-left: 1rem;
 	border:none;
 
-	outline: 1px solid red;
-}
-
-.persons-wrapper{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}
-
-
-
-
-/*.modal{
-	position: absolute;
-	left:50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-
-	width: 46.9rem;
-	height: 25.8rem;
-	padding: 6.9rem 5.5rem;
-
-	font-weight: 700;
-	z-index: 1;
-
-	box-shadow: 5px 5px 5px 0px rgba(225, 224, 222, 0.3);
-
-	background-color: #fff;
-
-}
-
-p.appointment-item{
-	position: relative;
-	margin: 0;
-	margin-bottom: 30px;
-}
-
-label[for="in"]{
-	display: inline-block;
-	margin-right: 1.6rem;
-	vertical-align: middle;
-}
-
-label[for="out"]{
-	display: inline-block;
-	margin-right: 1.2rem;
-	vertical-align: middle;
-}
-
-label[for="adults"]{
-	margin-right: 2.9rem;
-}
-
-.appointment-item input{
-	width: 33rem;
-	height: 3.9rem;
-	padding-left: 1.5rem;
-	border: none;
-	
 	font-weight: 700;
 	text-transform: uppercase;
 
@@ -435,7 +389,6 @@ label[for="adults"]{
 .appointment-item input:focus{
 	background-color: #fff;
 }
-
 
 .calendar {
     position: absolute;
@@ -457,23 +410,31 @@ label[for="adults"]{
 	outline: none
 }
 
-.appointment-item:nth-child(3),.appointment-item:nth-child(4){
-	display: inline-block;
-	vertical-align: top;
-	width: 49%;
+.persons-wrapper{
+	height: 3.9rem;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+
+	margin: 3px 0 30px;
 }
 
-
-.quantity input, .minus, .plus{
-	width: 3.9rem;
-	height: 3.9rem;
+.minus, .plus, .quantity input{
+	width: 3.7rem;
+	height: 3.7rem;
+	text-align: center;
 	border: none;
 	padding: 0;
 
-	text-align: center;
 	font-weight: 700;
-	margin-right: -6px;
-
+	background-color: #f2f2f2
 }
 
 .minus, .plus{
@@ -488,18 +449,45 @@ label[for="adults"]{
 	color: #81b3d2;
 }
 
-.appointment-item:nth-child(4) .quantity{
-	margin-right: -4.9rem;
-	margin-left: 2rem;
+.quantity input:hover,.minus:hover, .plus:hover{
+background-color: #ebebeb;
 }
 
-.appointment-item:nth-child(3),.appointment-item:nth-child(4){
-	margin-bottom: 3rem;
+.quantity input:focus{
+	background-color: #fff;
+}
+
+.persons{
+	width: 50%;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
+.persons:last-child{
+	width: 40%;
+}
+
+.quantity{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .search{
-	width: 46.9rem;
-	padding: 2.3rem 0;
+	display: block;
+	width: 100%;
+	padding: 1.7rem 0rem;
 	border: none;
 
 	font-size: 2.1rem;
@@ -518,11 +506,6 @@ label[for="adults"]{
 	color: #88b6d1;
 	background-color: #5496bd;
 }
-
-
-*/
-
-
 
 /*Блок с формой  и  окном*/
 
@@ -558,13 +541,15 @@ label[for="adults"]{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 
-	min-height: 11rem;
-	min-width:12rem;
+	padding: 2.65rem 0;
+
+	flex-basis: 40rem;
 }
 
 .footer-item{
-	width: 35rem;
+	flex-grow: 1;
 }
 
 .hashtag {
@@ -642,7 +627,6 @@ label[for="adults"]{
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .copyright p {
