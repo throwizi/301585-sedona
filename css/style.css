@@ -173,30 +173,34 @@ input[type="radio"].visually-hidden {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	flex-basis: 40rem;
 }
 
 .banner-signature{
-	width: 34%;
-	height: 15.8rem;
-	padding-top: 4.4rem;
-	padding-bottom: 5.1rem;
+	flex-grow:1;
+	flex-basis: 40rem;
 	
+	padding: 4.85rem 0;
+
+
 	color: #fff;
 	line-height: 2.1rem;
 	background-color: #81b3d2;*/
 }
 
-.banner-signature:first-child{
-	margin-right: -4px;
-
-}
 
 .banner-img{
-	width: 66%;
+	height: 25.6rem;
 }
 
 .banner-img img{
-	width: 79.6rem;
+	flex-basis: 40rem;
+	flex-grow: 2;
+	margin: 0;
 }
 
 .features{
