@@ -343,6 +343,7 @@ div.banner:first-child{
 }
 
 .modal{
+
 	position: absolute;
 	left:50%;
 	transform:translateX(-50%);
@@ -354,7 +355,6 @@ div.banner:first-child{
 	display: flex;
 
 	width: 57rem;
-	padding-bottom: 8rem;
 
 	text-align: center;
 	
@@ -382,7 +382,13 @@ div.banner:first-child{
 }
 
 .reservation-form{
+	display: none;
 	padding-top: 5.5rem;
+	padding-bottom: 8rem;
+}
+
+.reservation-form-show{
+	display: block;
 }
 
 .reservation-form label{
@@ -537,6 +543,43 @@ background-color: #ebebeb;
 .search:focus{
 	color: #88b6d1;
 	background-color: #5496bd;
+}
+
+.modal-close {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #a60000;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 /*Блок с формой  и  окном*/
@@ -1145,4 +1188,5 @@ button[class^="arrow"]:active{
 background-color: #f2f2f2;
 padding: 0 1rem;
 }
+
 /*Блок с результатами сортировки*/
