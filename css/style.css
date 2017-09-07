@@ -11,6 +11,7 @@ body{
 	line-height: 2.6rem;
 	color: #000;
 	text-transform: uppercase;
+	letter-spacing: 0.1px;
 }
 
 a{
@@ -173,10 +174,14 @@ input[type="radio"].visually-hidden {
 
 .reasons > .title{
 	margin-bottom: 3rem;
+	
+	letter-spacing: -1.5px;
 }
 
 .footnote{
 	margin-bottom: 5rem;
+
+	letter-spacing: -0.8px;
 }
 
 .banner{
@@ -198,18 +203,31 @@ div.banner:first-child{
 
 .banner-signature{
 	flex-grow:1;
-	font-size: 1.4rem;
 	flex-basis: 40rem;
 	padding-top: 2rem;
 	padding-bottom: 5.1rem;
 
-
+	font-size: 1.4rem;
 	color: #fff;
 	line-height: 2.1rem;
 	background-color: #81b3d2;
 
 	vertical-align: top;
 }
+
+.banner-signature:nth-child(2){
+	padding-bottom: 4.7rem;
+    padding-top: 4.5rem;
+
+}
+
+.banner-signature:nth-child(2) .title{
+	margin-top: 0;
+
+	letter-spacing: -2px;
+}
+
+.banner
 
 
 .banner-img img{
@@ -221,7 +239,7 @@ div.banner:first-child{
 }
 
 .features{
-	margin-bottom: 7.5rem;
+	padding-bottom: 4.5rem;
 }
 
 .features-list{
@@ -244,9 +262,14 @@ div.banner:first-child{
 .feature-item{
 	flex-grow: 1;
 	flex-basis: 30rem;
-	padding-top: 12rem;
+	padding-top: 11.3rem;
+	
+	letter-spacing: -1px;
 }
 
+.feature-item h3{
+	margin-top: 2.8rem;
+}
 .feature-item:first-child{
 	background: url(../img/icons/icon-1.svg) no-repeat 50% 25%;
 }
@@ -286,9 +309,14 @@ div.banner:first-child{
 	flex-grow:1;
 	flex-basis: 30rem;
 	padding-bottom: 5rem;
-
+	padding-top: 2.5rem;
 	font-size: 1.4rem;
 	line-height: 2.1rem;
+}
+
+.reason-item h3{
+	margin-top: 0.5rem;
+	letter-spacing: -2.3px;
 }
 
 .reason-item p {
@@ -311,18 +339,23 @@ div.banner:first-child{
 	line-height: 3.6rem;
 	font-weight: 700;
 	margin: 0;
-	margin-top: 1rem;
+	margin-top: 1.6rem;
+
+	letter-spacing: -3px;
 }
 
 .search-form > p{
-	margin: 3.5rem 0;
+	margin-top: 2rem;
+	margin-bottom: 4.5rem;
 
 	color: #333333;
 }
 
 .btn-open{
 	border: none;
-	padding: 3rem 12.168rem;
+	padding: 0 13.8rem;
+	padding-top: 2.7rem;
+	padding-bottom: 3.1rem;
 
 	font-size: 2.1rem;
 	line-height: 2.6rem;
@@ -331,6 +364,8 @@ div.banner:first-child{
 	
 	background-color: #766357;
 	z-index: 2;
+
+	letter-spacing: -1.5px;
 }
 
 .btn-open:hover{
@@ -383,8 +418,8 @@ div.banner:first-child{
 
 .reservation-form{
 	display: none;
-	padding-top: 5.5rem;
-	padding-bottom: 8rem;
+	padding-top: 4.3rem;
+	padding-bottom: 7.4rem;
 }
 
 .reservation-form-show{
@@ -394,6 +429,7 @@ div.banner:first-child{
 .reservation-form label{
 	cursor: pointer;
 	font-weight: 700;
+
 }
 
 .appointment-item{
@@ -413,6 +449,7 @@ div.banner:first-child{
 	height: 3.7rem;
 	padding-left: 1rem;
 	border:none;
+	color: #000;
 
 	font-weight: 700;
 	text-transform: uppercase;
@@ -427,6 +464,11 @@ div.banner:first-child{
 .appointment-item input:focus{
 	background-color: #fff;
 }
+
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}
+:-moz-placeholder           {color:#000;}
+:-ms-input-placeholder      {color:#000;}
 
 .calendar {
     position: absolute;
@@ -545,43 +587,6 @@ background-color: #ebebeb;
 	background-color: #5496bd;
 }
 
-.modal-close {
-    position: absolute;
-    top: 17px;
-    right: 22px;
-
-    width: 22px;
-    height: 22px;
-
-    font-size: 0;
-
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.modal-close::before,
-.modal-close::after {
-  content: "";
-
-  position: absolute;
-  top: 10px;
-  left: 2px;
-
-  width: 19px;
-  height: 3px;
-
-  background-color: #a60000;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
-
 /*Блок с формой  и  окном*/
 
 .map{
@@ -618,12 +623,13 @@ background-color: #ebebeb;
 	justify-content: space-around;
 	align-items: center;
 
-	padding: 2.65rem 0;
+	padding: 2.8rem 0;
 	flex-basis: 40rem;
 }
 
 .footer-item{
 	flex-grow: 1;
+	flex-basis: 40rem;
 }
 
 .hashtag {
@@ -634,9 +640,13 @@ background-color: #ebebeb;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	padding-left:1rem;
 	
 	font-size: 2.1rem;
 	font-weight: 700;
+
+	letter-spacing: -2px;
 }
 
 .footer-social{
@@ -653,7 +663,7 @@ background-color: #ebebeb;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 
-	margin: 0 auto;
+	padding-left: 0rem;
 
 	list-style: none;
 }
@@ -707,6 +717,11 @@ background-color: #ebebeb;
 	margin-right: 0.6rem;
 }
 
+.logo-link svg{
+	width: 12.5rem;
+	height: 5rem;
+}
+
 .logo-link path:hover, .logo-link path:focus{
 	fill: #81b3d2;bdbbbc
 }
@@ -723,7 +738,6 @@ background-color: #ebebeb;
 
 
 .filters form{
-	min-height: 20rem;
 	background: #00BFFF url(../img/backgrounds/hotel-bg.jpg) no-repeat 50% 18%;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -737,7 +751,7 @@ background-color: #ebebeb;
 	align-items: center;
 
 	padding: 0 7.2rem;
-	padding-top: 2rem;
+	padding-top: 2.5rem;
 }
 
 .filter fieldset{
@@ -859,10 +873,14 @@ background-color: #ebebeb;
   cursor: pointer;
 }
 
+.min-price label{
+	padding-left: 0rem;
+}
+
 .price-controls .min-price,
 .price-controls .max-price {
   width: 9rem;
-  padding-left: 6.5rem;
+  padding-left: 4rem;
 }
 
 .price-controls input {
@@ -935,6 +953,8 @@ background-color: #ebebeb;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+
+  letter-spacing: -0.5px;
 }
 
 .btn-transparent:hover {
@@ -952,7 +972,7 @@ background-color: #ebebeb;
 	display: -o-flex;
 	display: flex;
 
-	padding: 3rem 7.2rem;
+	padding: 3.5rem 7.2rem;
 	margin: 0;
 	
 	flex-basis: auto;
@@ -1076,19 +1096,17 @@ button[class^="arrow"]:active{
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.result-rait{
-	margin-left: auto;
-}
-
 .result-img{
 	height: 9.1rem;
 	margin-right: 2.8rem;
 }
 
+
 .result{
 	display: flex;
     border-top: 1px solid #e5e5e5;
     padding: 3rem 6%;
+    padding-top: 2.5rem;
 }
 
 .result-info{
@@ -1168,6 +1186,8 @@ button[class^="arrow"]:active{
 
 	background-color: #766357;
 	cursor:pointer;
+
+	letter-spacing: -0.5px;
 }
 
 .booking-btn:hover, .booking-btn:focus{
@@ -1181,12 +1201,26 @@ button[class^="arrow"]:active{
 
 
 .result-rait{
+	margin-left: auto;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+
 	text-align: right;
 }
 
 .rait-num{
 background-color: #f2f2f2;
 padding: 0 1rem;
+margin-bottom: 0;
+margin-top: 3.5rem;
 }
 
 /*Блок с результатами сортировки*/
+

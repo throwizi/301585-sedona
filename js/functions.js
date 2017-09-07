@@ -1,17 +1,21 @@
-	var btnOpen = document.querySelector(".btn-open");
+	var btn = document.querySelector(".btn-open");
 
 	var popup = document.querySelector(".reservation-form");
 
-	var btnClose = document.querySelector(".modal-close");
+	var dateIn = popup.querySelector("[name = in]");
 
 
 
-	btnOpen.addEventListener("click", function (evt) {
+
+
+	btn.addEventListener("click", function (evt) {
 		evt.preventDefault();
-		popup.classList.add("reservation-form-show");
-	});	
+		
+		if(popup.classList.contains("reservation-form-show")){
+			popup.classList.remove("reservation-form-show");
+		} else {
+			popup.classList.add("reservation-form-show");
+		}
 
-	btnClose.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		popup.classList.remove("reservation-form-show");
+		dateIn.focus();
 	});	
