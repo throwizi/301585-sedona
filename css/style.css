@@ -1,3 +1,23 @@
+@keyframes bounce {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  50% {
+    transform: translateX(-200px);
+  }
+
+  70% {
+    transform: translateX(-400px);
+  }
+
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 html{
 	font-size: 10px;
 }
@@ -378,6 +398,7 @@ div.banner:first-child{
 }
 
 .modal{
+	opacity: 0;
 
 	position: absolute;
 	left:50%;
@@ -399,6 +420,14 @@ div.banner:first-child{
 	z-index: 1;
 }
 
+.modal-show{
+	opacity: 1;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+
+
 .form-wrapper{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -417,14 +446,10 @@ div.banner:first-child{
 }
 
 .reservation-form{
-	display: none;
 	padding-top: 4.3rem;
 	padding-bottom: 7.4rem;
 }
 
-.reservation-form-show{
-	display: block;
-}
 
 .reservation-form label{
 	cursor: pointer;
@@ -465,10 +490,18 @@ div.banner:first-child{
 	background-color: #fff;
 }
 
-::-webkit-input-placeholder {color:#000;}
-::-moz-placeholder          {color:#000;}
-:-moz-placeholder           {color:#000;}
-:-ms-input-placeholder      {color:#000;}
+::-webkit-input-placeholder {
+	font-family: "PTSans",Arial,sans-serif;
+	color:#000;}
+::-moz-placeholder          {
+	font-family: "PTSans",Arial,sans-serif;
+	color:#000;}
+:-moz-placeholder           {
+	font-family: "PTSans",Arial,sans-serif;
+	color:#000;}
+:-ms-input-placeholder      {
+	font-family: "PTSans",Arial,sans-serif;
+	color:#000;}
 
 .calendar {
     position: absolute;
@@ -774,6 +807,10 @@ background-color: #ebebeb;
     color: #fff;
 }
 
+.filter-option label:focus{
+	outline: 1px solid 
+}
+
 .filter-input-checkbox + label::after {
     content: "";
     position: absolute;
@@ -888,10 +925,24 @@ background-color: #ebebeb;
   margin: 0;
 
   color: inherit;
-  font: inherit;
+  font: 1.4rem/2.1rem "PTSans",sans-serif;
 
   background: none;
   border: none;
+}
+
+.price-controls input[type=text]:focus {
+    outline: 0;
+}
+.price-controls input::-webkit-input-placeholder {
+    color: #fff;
+}
+.price-controls input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.price-controls input:-ms-input-placeholder {
+    color: #fff;
 }
 
 .range-controls {
@@ -953,15 +1004,18 @@ background-color: #ebebeb;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  outline: 0;
 
   letter-spacing: -0.5px;
 }
 
-.btn-transparent:hover {
+.btn-transparent:hover,.btn-transparent:focus {
   color: #000000;
-
+	
   background: #ffffff;
 }
+
+
 
 /*Блок с фильтрами*/
 

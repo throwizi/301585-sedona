@@ -1,6 +1,6 @@
 	var btn = document.querySelector(".btn-open");
 
-	var popup = document.querySelector(".reservation-form");
+	var popup = document.querySelector(".modal");
 
 	var dateIn = popup.querySelector("[name = in]");
 
@@ -12,13 +12,20 @@
 	btn.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		
-		if(popup.classList.contains("reservation-form-show")){
-			popup.classList.remove("reservation-form-show");
+		if(popup.classList.contains("modal-show")){
+			popup.classList.remove("modal-show");
 		} else {
-			popup.classList.add("reservation-form-show");
+			popup.classList.add("modal-show");
 		}
 
 		dateIn.focus();
 	});
 
 
+	window.addEventListener("keydown", function (evt) {
+	    if (evt.keyCode === 27) {
+	      if (popup.classList.contains("modal-show")) {
+	        popup.classList.remove("modal-show");
+	      }
+	    }
+	  });
