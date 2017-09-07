@@ -29,57 +29,58 @@
 
 	<form  action="http://echo.htmlacademy.ru" method="get" class="filter">
 
-	<fieldset>
-	<legend>Инфраструктура:</legend>
-	 <ul class="filter-list">
-	  <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="pool" id="pool" checked>
-		  <label for="pool">Бассейн</label>
-	  </li>
-	  <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="park-place" id="park-place">
-		  <label for="park-place">Парковка</label>
-		 
-	  </li>
-	  <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="wi-fi" id="wi-fi">
-		  <label for="wi-fi">Wi-fi</label>
-     </li>
-     </ul>
-	</fieldset>
-	<fieldset>
-	<legend>Тип жилья:</legend>
-	<ul class="filter-list">
-	  <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="hotels" id="hotels" checked>
-		  <label for="hotels">Гостиница</label>
-	 </li>
-     <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="motels" id="motels" checked>
-		  <label for="motels">Мотель</label>
-	 </li>
-	 <li class="filter-option">
-		  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="apartments" id="apartments" checked>
-		  <label for="apartments">Апартаменты</label>
-	 </li>
-    </ul>
-    </fieldset>
-    <fieldset> 
-	 <div class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
-      <button class="btn-transparent" type="submit">Показать</button>
-    </div>
+		<fieldset>
+		<legend>Инфраструктура:</legend>
+		<ul class="filter-list">
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="pool" id="pool" checked>
+			  <label for="pool">Бассейн</label>
+		  </li>
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="park-place" id="park-place">
+			  <label for="park-place">Парковка</label>
+			 
+		  </li>
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="wi-fi" id="wi-fi">
+			  <label for="wi-fi">Wi-fi</label>
+		 </li>
+		</ul>
+		</fieldset>
+		<fieldset>
+		<legend>Тип жилья:</legend>
+		<ul class="filter-list">
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="hotels" id="hotels" checked>
+			  <label for="hotels">Гостиница</label>
+		  </li>
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="motels" id="motels" checked>
+			  <label for="motels">Мотель</label>
+		  </li>
+		  <li class="filter-option">
+			  <input type="checkbox" class="visually-hidden filter-input-checkbox" name="apartments" id="apartments" checked>
+			  <label for="apartments">Апартаменты</label>
+		  </li>
+		</ul>
+		</fieldset>
+		<fieldset> 
+		  <div class="filter-range">
+			  <div class="filter-range-title">Стоимость в сутки (р):</div>
+			  <div class="price-controls">
+			    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+			    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+			  </div>
+			  <div class="range-controls">
+			    <div class="scale">
+			      <div class="bar"></div>
+			    </div>
+			    <div class="range-toggle range-toggle-min"></div>
+			    <div class="range-toggle range-toggle-max"></div>
+			  </div>
+			  <button class="btn-transparent" type="submit">Показать</button>
+		  </div>
+		</fieldset>
 	</form>
   </section>
   <section class="sorting">
@@ -97,8 +98,8 @@
 	</li>
 	<li class="sort-item">
 		<div class="sort-arrows">
-			<button class="arrow-up" alt="Сортировка по возрастающей цене">	&#9650;</button>
-			<button class="arrow-down" alt="Сортировка по убывающей цене">&#9660;</button>
+			<button class="arrow-up">&#9650;<span class="visually-hidden">Сортировать по возрастающей цене</span></button>
+			<button class="arrow-down">&#9660;<span class="visually-hidden">Сортировать по убывающей цене</span></button>
 		</div>
 	</li>
   </ul>
