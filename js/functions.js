@@ -4,10 +4,6 @@
 
 	var dateIn = popup.querySelector("[name = in]");
 
-	
-
-
-
 
 	btn.addEventListener("click", function (evt) {
 		evt.preventDefault();
@@ -20,7 +16,6 @@
 
 		dateIn.focus();
 	});
-
 
 	window.addEventListener("keydown", function (evt) {
 	    if (evt.keyCode === 27) {
