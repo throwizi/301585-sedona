@@ -2,7 +2,11 @@
 
 	var popup = document.querySelector(".modal");
 
+	var form = popup.querySelector("form");
+
 	var dateIn = popup.querySelector("[name = in]");
+
+	var dateOut = popup.querySelector("[name = out]");
 
 
 	btn.addEventListener("click", function (evt) {
@@ -24,3 +28,11 @@
 	      }
 	    }
 	  });
+
+
+	form.addEventListener("submit", function (evt) {
+    if (!dateIn.value || !dateOut.value) {
+      evt.preventDefault();
+      alert("Не забудьте ввести даты заезда и выезда!");
+    	}
+ 	});
