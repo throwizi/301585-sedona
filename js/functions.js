@@ -12,23 +12,14 @@
 	btn.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		
-		if(popup.classList.contains("modal-show")){
-			popup.classList.remove("modal-show");
+		if(popup.classList.contains("modal-hide")){
+			popup.classList.remove("modal-hide");
 		} else {
-			popup.classList.add("modal-show");
+			popup.classList.add("modal-hide");
 		}
 
 		dateIn.focus();
 	});
-
-	window.addEventListener("keydown", function (evt) {
-	    if (evt.keyCode === 27) {
-	      if (popup.classList.contains("modal-show")) {
-	        popup.classList.remove("modal-show");
-	      }
-	    }
-	  });
-
 
 	form.addEventListener("submit", function (evt) {
     if (!dateIn.value || !dateOut.value) {
