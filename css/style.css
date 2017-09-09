@@ -756,7 +756,7 @@ background-color: #ebebeb;
 }
 
 .logo-link path:hover, .logo-link path:focus{
-	fill: #81b3d2;bdbbbc
+	fill: #81b3d2;
 }
 
 .logo-link path:active{
@@ -1155,49 +1155,28 @@ button[class^="arrow"]:active{
 	margin-right: 2.8rem;
 }
 
-
 .result{
-	display: flex;
     border-top: 1px solid #e5e5e5;
     padding: 3rem 6%;
     padding-top: 2.5rem;
 }
 
 .result-info{
-	text-align: left;
+ border-collapse: collapse;
 }
 
 .result-title {
-    display: block;
     font-size: 1.85rem;
     line-height: 2.6rem;
     font-weight: bold;
+
+    text-align: left;
 }
 
-
-.result-row-text, .result-row-buttons {
-    display: flex;
-    flex-wrap: wrap;
+.result-row-text td{
+	text-align: left;
+	padding-bottom: 1rem;
 }
-
-.result-row-text{
-    margin-bottom: 1.4rem;
-}
-
-.result-type{
-	flex-grow: 0.45;
-}
-
-.result-price{
-	flex-grow: 1;
-}
-
-.result-row-buttons{	
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 
 .result-title a:hover, .result-title a:focus{
 	color: #81b3d2;
@@ -1208,15 +1187,16 @@ button[class^="arrow"]:active{
 }
 
 .about-link{
-
-	padding: 0 1.2rem;
-	margin-right: 0.6rem;
+	margin-right: 0.4rem;
+	padding: 0.5rem 1.5rem;
 
 	color: #fff;
 	font-weight: 700;
 	text-align: center;
-	
+	letter-spacing: -1px;
+
 	background-color: #81b3d2;
+
 }
 
 .about-link:hover, .about-link:focus{
@@ -1229,9 +1209,8 @@ button[class^="arrow"]:active{
 }
 
 .booking-btn{
-	display: block;
 
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1.5rem;
 	border:none;
 
 	color: #fff;
@@ -1241,7 +1220,7 @@ button[class^="arrow"]:active{
 	background-color: #766357;
 	cursor:pointer;
 
-	letter-spacing: -0.5px;
+	letter-spacing: -1px;
 }
 
 .booking-btn:hover, .booking-btn:focus{
