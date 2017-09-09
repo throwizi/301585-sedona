@@ -114,7 +114,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li{
 	padding-top: 1.4rem;
-	padding-bottom: 1.65rem;
+	padding-bottom: 1.6rem;
 }
 
 .site-navigation li:nth-child(2){
@@ -156,7 +156,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     background: url(../img/backgrounds/index-bg.jpg) 0 -56px no-repeat #81b3d2;
     background-size: cover;
-    margin-bottom: 3.3em;
+    margin-bottom: 4.3rem;
 }
 
 .mask{
@@ -193,13 +193,13 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons > .title{
-	margin-bottom: 3rem;
+	margin-bottom: 2.5rem;
 	
 	letter-spacing: -1.5px;
 }
 
 .footnote{
-	margin-bottom: 5rem;
+	margin-bottom: 5.3rem;
 
 	letter-spacing: -0.8px;
 }
@@ -224,8 +224,8 @@ div.banner:first-child{
 .banner-signature{
 	flex-grow:1;
 	flex-basis: 40rem;
-	padding-top: 2rem;
-	padding-bottom: 5.1rem;
+	padding-top: 2.5rem;
+	padding-bottom: 4.6rem;
 
 	font-size: 1.4rem;
 	color: #fff;
@@ -233,6 +233,10 @@ div.banner:first-child{
 	background-color: #81b3d2;
 
 	vertical-align: top;
+}
+
+.title{
+	letter-spacing: -1px;
 }
 
 .banner-signature:nth-child(2){
@@ -259,7 +263,7 @@ div.banner:first-child{
 }
 
 .features{
-	padding-bottom: 4.5rem;
+	padding-bottom: 4.7rem;
 }
 
 .features-list{
@@ -328,7 +332,7 @@ div.banner:first-child{
 .reason-item{
 	flex-grow:1;
 	flex-basis: 30rem;
-	padding-bottom: 5rem;
+	padding-bottom: 4.3rem;
 	padding-top: 2.5rem;
 	font-size: 1.4rem;
 	line-height: 2.1rem;
@@ -341,6 +345,8 @@ div.banner:first-child{
 
 .reason-item p {
 	color: #333333;
+	margin-top: 2rem;
+	letter-spacing: -0.5px;
 }
 
 /*Блок с причинами*/
@@ -366,16 +372,14 @@ div.banner:first-child{
 
 .search-form > p{
 	margin-top: 2rem;
-	margin-bottom: 4.5rem;
+	margin-bottom: 4.7rem;
 
 	color: #333333;
 }
 
 .btn-open{
 	border: none;
-	padding: 0 13.8rem;
-	padding-top: 2.7rem;
-	padding-bottom: 3.1rem;
+	padding: 2.9rem 13.8rem 3.1rem;
 
 	font-size: 2.1rem;
 	line-height: 2.6rem;
@@ -440,14 +444,14 @@ div.banner:first-child{
 	-o-flex-direction: column;
 	flex-direction: column;
 
-	max-width: 57rem;
+	max-width: 56.7rem;
 	margin: 0 auto;
 
 }
 
 .reservation-form{
 	padding-top: 4.3rem;
-	padding-bottom: 7.4rem;
+	padding-bottom: 5.5rem;
 }
 
 
@@ -462,7 +466,8 @@ div.banner:first-child{
 }
 
 .appointment-item label{
-	margin-right: 2.5rem;
+	margin-right: 1rem;
+	letter-spacing: -0.2px;
 }
 
 .appointment-item{
@@ -470,8 +475,8 @@ div.banner:first-child{
 }
 
 .appointment-item input{
-	width: 34rem;
-	height: 3.7rem;
+	width: 33rem;
+	height: 3.6rem;
 	padding-left: 1rem;
 	border:none;
 	color: #000;
@@ -505,7 +510,7 @@ div.banner:first-child{
 
 .calendar {
     position: absolute;
-    right: 10px;
+    right: 4px;
     bottom: 6px;
     fill: #cacaca;
     background-color: transparent;
@@ -600,7 +605,8 @@ background-color: #ebebeb;
 .search{
 	display: block;
 	width: 100%;
-	padding: 1.7rem 0rem;
+	padding: 1.6rem 0rem;
+	margin-top: 5rem;
 	border: none;
 
 	font-size: 2.1rem;
@@ -656,7 +662,7 @@ background-color: #ebebeb;
 	justify-content: space-around;
 	align-items: center;
 
-	padding: 2.8rem 0;
+	padding: 2.1rem 0;
 	flex-basis: 40rem;
 }
 
@@ -679,6 +685,10 @@ background-color: #ebebeb;
 	font-size: 2.1rem;
 	font-weight: 700;
 
+}
+
+.hashtag p{
+	margin: 0;
 	letter-spacing: -2px;
 }
 
@@ -716,8 +726,8 @@ background-color: #ebebeb;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 
-	width: 5rem;
-	height: 5rem;
+	width: 4.6rem;
+	height: 4.8rem;
 
 	margin-right: 0.6rem;
 
@@ -748,11 +758,16 @@ background-color: #ebebeb;
 
 .copyright p {
 	margin-right: 0.6rem;
+	letter-spacing: -1px;
 }
 
 .logo-link svg{
-	width: 12.5rem;
-	height: 5rem;
+	width: 11.5rem;
+	height: 4.1rem;
+}
+
+.logo-link{
+	margin-top: auto;
 }
 
 .logo-link path:hover, .logo-link path:focus{
@@ -1111,6 +1126,10 @@ button[class^="arrow"]:active{
 	justify-content: center;
 }
 
+.arrow-down{
+	margin-left: 0.7rem;
+}
+
 .sorting-title, .result-title{
 	margin: 0;
 }
@@ -1133,8 +1152,8 @@ button[class^="arrow"]:active{
 	-ms-align-items: center;
 	align-items: center;
 
-	padding: 1.4rem 7.2rem;
-
+	padding: 2.8rem  7.2rem 3rem 7.2rem;
+	border-top: 1px solid #e5e5e5;
 }
 
 .result:first-child{
@@ -1151,14 +1170,12 @@ button[class^="arrow"]:active{
 }
 
 .result-img{
-	height: 9.1rem;
+	height: 9rem;
 	margin-right: 2.8rem;
 }
 
-.result{
-    border-top: 1px solid #e5e5e5;
-    padding: 3rem 6%;
-    padding-top: 2.5rem;
+.result-img img{
+	height: 100%;
 }
 
 .result-info{
